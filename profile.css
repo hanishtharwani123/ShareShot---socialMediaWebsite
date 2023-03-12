@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: var(--primary-color);
+}
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #fff;
+    --third-color: rgb(255, 111, 0);
+    --fourth-color: #ababab;
+}
+
+.left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 335px;
+    background: var(--primary-color);
+    float: left;
+    border-right: 1px solid rgb(57, 56, 56);
+    padding: 20px 70px;
+}
+
+.logo {
+    color: var(--secondary-color);
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#logo-pic {
+    width: 55px;
+    height: 55px;
+    color: var(--secondary-color);
+    margin-left: 18px;
+    display: none;
+}
+
+.nav-bar {
+    display: grid;
+    grid-gap: 35px;
+    margin-top: 46px;
+}
+
+.nav-link {
+    display: flex;
+    cursor: pointer;
+}
+
+#nav-icons {
+    font-size: 23px;
+    color: var(--secondary-color);
+    margin-left: 18px;
+}
+
+.home {
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-left: 18px;
+}
+
+#post-btn {
+    width: 170px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    background: var(--third-color);
+    color: var(--secondary-color);
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.pro {
+    display: flex;
+    width: 740px;
+    height: 335px;
+    border-radius: 10px;
+    border: none;
+    background: var(--secondary-color);
+    padding: 30px 24px;
+    margin-left: 165px;
+}
+
+#my-pic-pro {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+}
+
+.sec {
+    display: grid;
+    grid-gap: -10px;
+    margin-left: 20px;
+    margin-top: 14px;
+}
+
+.sec1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-my {
+    display: flex;
+}
+
+.name-pro {
+    font-size: 24px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+#blue-tick {
+    width: 20px;
+    height: 20px;
+    margin: 9px 7px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+#follow {
+    width: 95px;
+    height: 40px;
+    text-align: center;
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 6px;
+    background-color: var(--third-color);
+    border: none;
+    border-radius: 8px;
+    font-size: 15.4px;
+}
+
+#dot-icon1 {
+    cursor: pointer;
+    color: var(--fourth-color);
+    font-size: 21px;
+    margin-left: 18px;
+}
+
+.sec2 {
+    display: flex;
+    margin-top: 19px;
+}
+
+.post {
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: 400;
+    margin-left: 53px;
+}
+
+.post1 {
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.bio {
+    font-size: 16.3px;
+    color: var(--primary-color);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.sec3 {
+    margin-top: 27px;
+}
+
+@media screen and (max-width:1285px) {
+    .pro {
+        margin-left: 333px;
+    }
+}
+
+@media screen and (max-width:1087px) {
+    .pro {
+        margin-left: 231px;
+    }
+
+    .left {
+        width: 226px;
+        padding: 20px 11px;
+    }
+}
+
+@media screen and (max-width:986px) {
+    .pro {
+        margin-left: 70px;
+    }
+
+    .left {
+        width: 82px;
+        padding: 20px 11px;
+    }
+
+    .home {
+        display: none;
+    }
+
+    #logo-pic {
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin-left: 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #post-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 16px;
+        border-radius: 50%;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .pro {
+        margin-left: 84px;
+        width: 617px;
+    }
+
+    .left {
+        width: 82px;
+        padding: 20px 11px;
+    }
+
+    .home {
+        display: none;
+    }
+
+    #logo-pic {
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin-left: 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #post-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 16px;
+        border-radius: 50%;
+        margin-top: 40px;
+    }
+
+    #my-pic-pro {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+    }
+
+    #follow {
+        width: 86px;
+        height: 34px;
+        text-align: center;
+        color: var(--secondary-color);
+        cursor: pointer;
+        font-weight: 500;
+        margin-left: 6px;
+        background-color: var(--third-color);
+        border: none;
+        border-radius: 8px;
+        font-size: 14.4px;
+    }
+
+    .bio {
+        font-size: 13.3px;
+        color: var(--primary-color);
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+
+    #blue-tick {
+        width: 16px;
+        height: 16px;
+        margin: 5px 5px;
+    }
+
+    .name-pro {
+        font-size: 17px;
+        color: var(--primary-color);
+        font-weight: 500;
+    }
+
+
+    .post {
+        font-size: 15px;
+        color: var(--primary-color);
+        font-weight: 400;
+        margin-left: 43px;
+    }
+
+    .post1 {
+        font-size: 15px;
+        color: var(--primary-color);
+        font-weight: 400;
+    }
+
+}
+
+@media screen and (max-width:708px) {
+    .pro {
+        margin-left: 84px;
+        width: 427px;
+        display: grid;
+        height: 425px;
+        padding: 30px 9px;
+    }
+
+    .left {
+        width: 82px;
+        padding: 20px 11px;
+    }
+
+    .home {
+        display: none;
+    }
+
+    #logo-pic {
+        display: block;
+        width: 48px;
+        height: 48px;
+        margin-left: 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #post-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 16px;
+        border-radius: 50%;
+        margin-top: 40px;
+    }
+
+    #my-pic-pro {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+    }
+
+    #follow {
+        width: 86px;
+        height: 34px;
+        text-align: center;
+        color: var(--secondary-color);
+        cursor: pointer;
+        font-weight: 500;
+        margin-left: 6px;
+        background-color: var(--third-color);
+        border: none;
+        border-radius: 8px;
+        font-size: 14.4px;
+    }
+
+    .bio {
+        font-size: 13.3px;
+        color: var(--primary-color);
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+
+    #blue-tick {
+        width: 16px;
+        height: 16px;
+        margin: 5px 5px;
+    }
+
+    .name-pro {
+        font-size: 17px;
+        color: var(--primary-color);
+        font-weight: 500;
+    }
+
+
+    .post {
+        font-size: 15px;
+        color: var(--primary-color);
+        font-weight: 400;
+        margin-left: 43px;
+    }
+
+    .post1 {
+        font-size: 15px;
+        color: var(--primary-color);
+        font-weight: 400;
+    }
+
+}
+
+@media screen and (max-width:524px) {
+    .pro {
+        margin-left: 62px;
+        width: 373px;
+        display: grid;
+        height: 452px;
+        padding: 30px 3px;
+    }
+
+    .left {
+        width: 62px;
+        padding: 20px 4px;
+    }
+
+    .home {
+        display: none;
+    }
+
+    #logo-pic {
+        display: block;
+        width: 35px;
+        height: 35px;
+        margin-left: 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #post-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 13.3px;
+        border-radius: 50%;
+        margin-top: 40px;
+    }
+
+    #follow {
+        width: 78px;
+        height: 31px;
+        text-align: center;
+        color: var(--secondary-color);
+        cursor: pointer;
+        font-weight: 500;
+        margin-left: 6px;
+        background-color: var(--third-color);
+        border: none;
+        border-radius: 8px;
+        font-size: 14.4px;
+    }
+
+    .bio {
+        font-size: 13.3px;
+        color: var(--primary-color);
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+
+    #blue-tick {
+        width: 16px;
+        height: 16px;
+        margin: 2px 4px;
+
+    }
+
+    .name-pro {
+        font-size: 14px;
+        color: var(--primary-color);
+        font-weight: 500;
+    }
+
+
+    .post {
+        font-size: 15px;
+        color: var(--primary-color);
+        font-weight: 400;
+        margin-left: 43px;
+    }
+
+    .post1 {
+        font-size: 15px;
+        color: var(--primary-color);
+        font-weight: 400;
+    }
+
+    #my-pic-pro {
+        width: 155px;
+        height: 155px;
+        border-radius: 50%;
+    }
+
+}
+
+@media screen and (max-width:446px) {
+    .pro {
+        margin-left: 62px;
+        width: 279px;
+        display: grid;
+        height: 487px;
+        padding: 30px 2px;
+    }
+
+    .left {
+        width: 62px;
+        padding: 20px 4px;
+    }
+
+    .home {
+        display: none;
+    }
+
+    #logo-pic {
+        display: block;
+        width: 35px;
+        height: 35px;
+        margin-left: 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    #post-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 13.3px;
+        border-radius: 50%;
+        margin-top: 40px;
+    }
+
+    #follow {
+        width: 78px;
+        height: 31px;
+        text-align: center;
+        color: var(--secondary-color);
+        cursor: pointer;
+        font-weight: 500;
+        margin-left: 6px;
+        background-color: var(--third-color);
+        border: none;
+        border-radius: 8px;
+        font-size: 14.4px;
+    }
+
+    .bio {
+        font-size: 13.3px;
+        color: var(--primary-color);
+        font-weight: 400;
+        letter-spacing: 0.5px;
+    }
+
+    #blue-tick {
+        width: 16px;
+        height: 16px;
+        margin: 2px 4px;
+
+    }
+
+    .name-pro {
+        font-size: 14px;
+        color: var(--primary-color);
+        font-weight: 500;
+    }
+
+
+    .post {
+        font-size: 14px;
+        color: var(--primary-color);
+        font-weight: 400;
+        margin-left: 30px;
+    }
+
+    .post1 {
+        font-size: 14px;
+        color: var(--primary-color);
+        font-weight: 400;
+    }
+
+    #dot-icon1 {
+        display: none;
+    }
+
+    #my-pic-pro {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+}
